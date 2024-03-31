@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - 01</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Fundo do site -->
+    <div class="background">
+        <!-- Formulário da calculadora -->
+        <div class="calculadora">
+            <!-- Título -->
+            <h2>Calculadora 01</h2>
+            <!-- Campo de entrada de número -->
+            <p id="resultado"></p>
+            <!-- Tabela com botões númericos e operadores -->
+            <table>
+                <tr>
+                    <td><button class="btn limpar" onclick="limpar()">C</button></td>
+                    <td><button class="btn" onclick="voltar()"><</button></td>
+                    <td><button class="btn" onclick="inserir('/')">/</button></td>
+                    <td><button class="btn" onclick="inserir('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="inserir('7')">7</button></td>
+                    <td><button class="btn" onclick="inserir('8')">8</button></td>
+                    <td><button class="btn" onclick="inserir('9')">9</button></td>
+                    <td><button class="btn" onclick="inserir('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="inserir('4')">4</button></td>
+                    <td><button class="btn" onclick="inserir('5')">5</button></td>
+                    <td><button class="btn" onclick="inserir('6')">6</button></td>
+                    <td><button class="btn" onclick="inserir('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="inserir('1')">1</button></td>
+                    <td><button class="btn" onclick="inserir('2')">2</button></td>
+                    <td><button class="btn" onclick="inserir('3')">3</button></td>
+                    <td rowspan="2"><button class="btn igual" style="height: 106px;" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="btn" style="width: 106px;" onclick="inserir('0')">0</button></td>
+                    <td><button class="btn" onclick="inserir('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
